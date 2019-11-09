@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+nav {
+  padding: 1vw;
+  background-color: lightgreen;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  margin: 0 3vw;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: brown;
+  transition: color 0.6s linear;
+}
+
+nav > ul > li > a:hover {
+  font-size: 30px;
+  color: lightcoral;
+  transition: color 0.5s linear;
+}
