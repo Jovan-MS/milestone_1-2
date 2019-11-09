@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My first project with VCS</title>
+  </head>
+  <body>
+    <header style="font-family: Arial, Helvetica, sans-serif">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form style="font-family: Arial, Helvetica, sans-serif">
+      <p>
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required />
+      </p>
+      <p>
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </p>
+      <p>
+        <label for="number">Enter your phone: </label>
+        <input type="number" name="number" id="number" required />
+      </p>
+      <p>
+        <label for="holiday-choice">Select your gender:</label>
+        <input list="gender-choices" id="gender-choice" name="gender-choice" />
+        <datalist id="gender-choices">
+          <option value="Male"> </option>
+          <option value="Female"> </option>
+          <option value="Other"> </option>
+          <option value="Prefer not to say"> </option>
+        </datalist>
+      </p>
+      <p>
+        <label for="select">Select your gender:</label>
+        <select name="gender" id="gender-select">
+          <option value="">--Please choose your gender--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <option value="prefernotto">Prefer Not To Say</option>
+        </select>
+      </p>
+      <label for="story">Tell us your story:</label>
+      <textarea id="story" name="story" rows="7" cols="33" required>
+      Text of the story starts here...
+      </textarea>
+      <p>
+        <label for="radio">Is this the correct form?</label>
+        <input type="radio" id="yes" name="yes" value="yes" checked />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="yes" value="no" />
+        <label for="no">No</label>
+      </p>
+      <p>Choose your favourite language:</p>
+      <div>
+        <input type="checkbox" id="html" name="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="css" />
+        <label for="css">CSS</label>
+      </div>
+      <p>
+        <input type="submit" value="Send!" />
+      </p>
+    </form>
+  </body>
+</html>
